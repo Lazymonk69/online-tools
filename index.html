@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>🛠 My Online Tools</h1>
+        <p>Simple tools for everyday use</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Calculator Tool -->
+        <div class="tool">
+            <h2>Calculator</h2>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <button onclick="addNumbers()">Add</button>
+            <p id="calcResult"></p>
+        </div>
+
+        <!-- Text Counter Tool -->
+        <div class="tool">
+            <h2>Word Counter</h2>
+            <textarea id="textInput" placeholder="Type your text..."></textarea>
+            <button onclick="countWords()">Count Words</button>
+            <p id="wordResult"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
