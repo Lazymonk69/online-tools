@@ -1,45 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
     text-align: center;
 }
 
 header {
-    background: #333;
+    padding: 20px;
+    background: linear-gradient(90deg, #0ea5e9, #9333ea);
     color: white;
-    padding: 15px;
+    box-shadow: 0 0 20px #0ea5e9;
 }
 
 .container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
 .tool {
-    background: white;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 15px;
     padding: 20px;
-    margin: 10px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 15px;
+    width: 280px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(14,165,233,0.2);
+}
+
+.tool:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 25px rgba(147,51,234,0.6);
 }
 
 input, textarea {
     width: 90%;
+    padding: 10px;
     margin: 10px 0;
-    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: white;
 }
 
 button {
-    padding: 10px;
-    background: #007BFF;
-    color: white;
+    padding: 10px 15px;
     border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #0ea5e9, #9333ea);
+    color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #0056b3;
+    opacity: 0.8;
 }
