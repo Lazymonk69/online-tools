@@ -3,33 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Online Tools</title>
+    <title>FutureTools</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>🛠 My Online Tools</h1>
-        <p>Simple tools for everyday use</p>
+        <h1>⚡ FutureTools</h1>
+        <p>Your futuristic online toolkit</p>
     </header>
 
     <div class="container">
 
-        <!-- Calculator Tool -->
+        <!-- Calculator -->
         <div class="tool">
             <h2>Calculator</h2>
-            <input type="number" id="num1" placeholder="Enter first number">
-            <input type="number" id="num2" placeholder="Enter second number">
+            <input type="number" id="num1" placeholder="First number">
+            <input type="number" id="num2" placeholder="Second number">
             <button onclick="addNumbers()">Add</button>
             <p id="calcResult"></p>
         </div>
 
-        <!-- Text Counter Tool -->
+        <!-- Word Counter -->
         <div class="tool">
             <h2>Word Counter</h2>
-            <textarea id="textInput" placeholder="Type your text..."></textarea>
-            <button onclick="countWords()">Count Words</button>
+            <textarea id="textInput" placeholder="Type text..."></textarea>
+            <button onclick="countWords()">Count</button>
             <p id="wordResult"></p>
+        </div>
+
+        <!-- Password Generator -->
+        <div class="tool">
+            <h2>Password Generator</h2>
+            <input type="number" id="passLength" placeholder="Length (e.g. 10)">
+            <button onclick="generatePassword()">Generate</button>
+            <p id="passwordResult"></p>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="tool">
+            <h2>BMI Calculator</h2>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (m)">
+            <button onclick="calculateBMI()">Calculate</button>
+            <p id="bmiResult"></p>
+        </div>
+
+        <!-- Unit Converter -->
+        <div class="tool">
+            <h2>KM → Miles</h2>
+            <input type="number" id="kmInput" placeholder="Kilometers">
+            <button onclick="convertKM()">Convert</button>
+            <p id="kmResult"></p>
         </div>
 
     </div>
